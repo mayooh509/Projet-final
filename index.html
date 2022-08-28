@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        canvas {
+            background: rgb(191, 191, 191);
+            margin-left: 20px;
+        }
+    </style> 
+
+    <canvas id="Figure" width="1000" height="700">Dessins</canvas>
+
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+       
+        ctx.moveTo(515, 100);
+        ctx.lineTo(375, 260);
+        ctx.lineTo(450, 260);
+        ctx.lineTo(450, 420);
+        ctx.lineTo(260, 420);
+        ctx.lineTo(260, 350);
+        ctx.lineTo(110, 510);
+        ctx.lineTo(260, 670);
+        ctx.lineTo(260, 600);
+        ctx.lineTo(760, 600);
+        ctx.lineTo(760, 670);
+        ctx.lineTo(930, 510);
+        ctx.lineTo(930, 510);
+        ctx.lineTo(760, 350);
+        ctx.lineTo(760, 420);
+        ctx.lineTo(563, 420);
+        ctx.lineTo(563, 260);
+        ctx.lineTo(640, 260);
+        ctx.lineTo(515, 100);
+        ctx.lineTo(392, 240);
+        
+        ctx.stroke();
+        ctx.closePath();
+    </script>
+
+</body>
+</html>
