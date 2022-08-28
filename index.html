@@ -22,10 +22,9 @@
         const ctx = canvas.getContext("2d");
 
         ctx.beginPath();
-        ctx.linewidth="10";
+        ctx.lineWidth= "10";
         ctx.fillStyle = "red";
         ctx.strokeStyle= "purple";
-       
         ctx.moveTo(515, 100);
         ctx.lineTo(375, 260);
         ctx.lineTo(450, 260);
@@ -46,7 +45,7 @@
         ctx.lineTo(640, 260);
         ctx.lineTo(515, 100);
         ctx.lineTo(392, 240);
-        
+        ctx.fill();
         ctx.stroke();
         ctx.closePath();
     </script>
